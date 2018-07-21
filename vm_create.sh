@@ -4,8 +4,8 @@ set -e
 
 if [ -z "$1" ]; then
 	echo Usage:
-	echo   ${0} slackbios 20G 2048 BIOS nic img/slackware64-14.2-install-dvd.iso
-	echo   ${0} slackuefi 20G 2048 UEFI nic img/slackware64-14.2-install-dvd.iso
+	echo   ${0} slackbios 20G 2048 BIOS user img/slackware64-14.2-install-dvd.iso
+	echo   ${0} slackuefi 20G 2048 UEFI user img/slackware64-14.2-install-dvd.iso
 	exit 0
 fi
 
