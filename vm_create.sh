@@ -25,7 +25,7 @@ for i in "${PARAMS[@]}"; do
 done
 export BIOS="-bios ${ROOT}/bios/seabios/bios.bin"
 if [ "${BOOT_TYPE}" == "UEFI" ]; then
-	export BIOS="-bios ${ROOT}/bios/ovmf_x64/OVMF-with-csm.fd"
+	export BIOS="-drive if=pflash,format=raw,readonly,file=../../bios/ovmf-x64/OVMF_CODE-pure-efi.fd -drive if=pflash,format=raw,file=../../bios/ovmf-x64/OVMF_VARS-pure-efi.fd"
 fi
 
 mkdir -p vm/${NAME}
