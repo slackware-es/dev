@@ -1,0 +1,1 @@
+mkinitrd -c -k 4.14.57 -r /dev/disk/by-uuid/76a7cfc3-c0bb-43ea-9206-a28b4cc4ee23 -m virtio_blk:virtio_pci:virtio_balloon:virtio_net:virtio_mmio:virtio_input:virtio_console:virtio_scsi:virtio-rng:virtio-gpu:ext4 -u -o /boot/initrd.gz
